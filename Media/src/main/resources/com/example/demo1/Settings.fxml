@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.SettingsController"
+      styleClass="settings-container"
+      spacing="20">
+    
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+    
+    <HBox alignment="CENTER_LEFT">
+        <Text text="Settings" styleClass="page-title"/>
+    </HBox>
+    
+    <TabPane styleClass="settings-tab-pane">
+        <Tab text="Profile" closable="false">
+            <VBox spacing="20" styleClass="settings-tab-content">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                
+                <!-- Profile Picture Section -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <StackPane fx:id="profilePicContainer" styleClass="settings-profile-pic-container">
+                        <Circle fx:id="profileCircle" radius="50" fill="#252525"/>
+                        <ImageView fx:id="profileImageView" fitWidth="100" fitHeight="100" preserveRatio="true" visible="false"/>
+                        <FontIcon fx:id="profileDefaultIcon" iconLiteral="fas-user-circle" iconSize="100" styleClass="user-avatar"/>
+                        
+                        <!-- Upload button overlay (shown on hover) -->
+                        <StackPane fx:id="uploadOverlay" styleClass="settings-upload-overlay" visible="false" 
+                                  onMouseClicked="#handleProfileImageUpload">
+                            <VBox alignment="CENTER" spacing="5">
+                                <FontIcon iconLiteral="fas-camera" iconSize="24" styleClass="upload-icon"/>
+                                <Text text="Change Picture" styleClass="upload-text"/>
+                            </VBox>
+                        </StackPane>
+                    </StackPane>
+                    
+                    <VBox spacing="10">
+                        <Text text="Profile Picture" styleClass="section-heading"/>
+                        <Text text="Upload a new profile picture or change your current one" styleClass="section-description"/>
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Button text="Upload Picture" onAction="#handleProfileImageUpload">
+                                <graphic>
+                                    <FontIcon iconLiteral="fas-upload" styleClass="button-icon"/>
+                                </graphic>
+                            </Button>
+                            <Button text="Remove" onAction="#removeProfilePicture" fx:id="removePhotoButton" disable="true">
+                                <graphic>
+                                    <FontIcon iconLiteral="fas-trash-alt" styleClass="button-icon"/>
+                                </graphic>
+                            </Button>
+                        </HBox>
+                    </VBox>
+                </HBox>
+                
+                <Separator/>
+                
+                <!-- User Information Section -->
+                <Text text="Account Information" styleClass="section-heading"/>
+                
+                <GridPane hgap="15" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="NEVER" minWidth="150"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    
+                    <Label text="Username:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <HBox spacing="10" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                        <Label fx:id="usernameValueLabel" text="Username"/>
+                        <Button text="Change" styleClass="small-button" onAction="#changeUsername"/>
+                    </HBox>
+                    
+                    <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                    <HBox spacing="10" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                        <Label fx:id="emailValueLabel" text="user@example.com"/>
+                        <Button text="Change" styleClass="small-button" onAction="#changeEmail"/>
+                    </HBox>
+                    
+                    <Label text="Password:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                    <Button text="Change Password" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#changePassword"/>
+                </GridPane>
+            </VBox>
+        </Tab>
+        
+        <Tab text="Appearance" closable="false">
+            <VBox spacing="20" styleClass="settings-tab-content">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                
+                <Text text="Theme" styleClass="section-heading"/>
+                <HBox spacing="15">
+                    <RadioButton text="Dark" fx:id="darkThemeRadio" toggleGroup="$themeToggle" selected="true" onAction="#applyTheme"/>
+                    <RadioButton text="Light" fx:id="lightThemeRadio" toggleGroup="$themeToggle" onAction="#applyTheme"/>
+                </HBox>
+                
+                <fx:define>
+                    <ToggleGroup fx:id="themeToggle"/>
+                </fx:define>
+            </VBox>
+        </Tab>
+        
+        <Tab text="Privacy" closable="false">
+            <VBox spacing="20" styleClass="settings-tab-content">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                
+                <Text text="Privacy Settings" styleClass="section-heading"/>
+                <CheckBox text="Remember login credentials" fx:id="rememberLoginCheck" selected="true"/>
+                <CheckBox text="Enable usage statistics" fx:id="enableStatsCheck"/>
+                <Button text="Clear All Data" onAction="#clearAllData"/>
+            </VBox>
+        </Tab>
+        
+        <Tab text="About" closable="false">
+            <VBox spacing="20" styleClass="settings-tab-content">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                
+                <Text text="Media Server" styleClass="app-title"/>
+                <Text text="Version 1.0.0" styleClass="version-text"/>
+                <Text text="© 2023 Media Server Inc." styleClass="copyright-text"/>
+                <Hyperlink text="View License" onAction="#viewLicense"/>
+                <Hyperlink text="Check for Updates" onAction="#checkForUpdates"/>
+            </VBox>
+        </Tab>
+    </TabPane>
+    
+    <HBox alignment="CENTER_RIGHT" spacing="10">
+        <Button text="Restore Defaults" onAction="#restoreDefaults"/>
+        <Button text="Apply" styleClass="primary-button" onAction="#applySettings"/>
+    </HBox>
+</VBox>

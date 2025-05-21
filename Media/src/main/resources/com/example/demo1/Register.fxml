@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="login-container" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo1.RegisterController">
+  <padding>
+    <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+  </padding>
+
+  <Text styleClass="login-title" text="Create New Account">
+    <font>
+      <Font name="System Bold" size="24.0"/>
+    </font>
+  </Text>
+
+  <VBox spacing="10.0" maxWidth="300">
+    <!-- Username field -->
+    <TextField fx:id="usernameField" promptText="Username" styleClass="text-input"/>
+    
+    <!-- Email field -->
+    <TextField fx:id="emailField" promptText="Email Address" styleClass="text-input"/>
+    
+    <!-- Password field with visibility toggle -->
+    <StackPane>
+      <PasswordField fx:id="passwordField" promptText="Password" styleClass="password-field"/>
+      <TextField fx:id="passwordTextField" promptText="Password" styleClass="password-field" visible="false"/>
+      <Button fx:id="togglePasswordButton" styleClass="eye-button" onAction="#togglePasswordVisibility">
+        <graphic>
+          <FontIcon fx:id="passwordVisibilityIcon" iconLiteral="fas-eye" styleClass="visibility-icon"/>
+        </graphic>
+      </Button>
+    </StackPane>
+    
+    <!-- Confirm Password field with visibility toggle -->
+    <StackPane>
+      <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" styleClass="password-field"/>
+      <TextField fx:id="confirmPasswordTextField" promptText="Confirm Password" styleClass="password-field" visible="false"/>
+      <Button fx:id="toggleConfirmPasswordButton" styleClass="eye-button" onAction="#toggleConfirmPasswordVisibility">
+        <graphic>
+          <FontIcon fx:id="confirmPasswordVisibilityIcon" iconLiteral="fas-eye" styleClass="visibility-icon"/>
+        </graphic>
+      </Button>
+    </StackPane>
+    
+    <!-- Password requirements -->
+    <VBox spacing="5" styleClass="requirements-box">
+      <Text fx:id="lengthRequirement" styleClass="requirement-text" text="• At least 8 characters"/>
+      <Text fx:id="numberRequirement" styleClass="requirement-text" text="• At least one special character"/>
+      <Text fx:id="uppercaseRequirement" styleClass="requirement-text" text="• At least one uppercase letter"/>
+    </VBox>
+
+    <!-- Register button -->
+    <Button fx:id="registerButton" text="Register" styleClass="primary-button"
+            maxWidth="Infinity" onAction="#handleRegister"/>
+
+    <!-- Login link -->
+    <HBox spacing="5.0" alignment="CENTER">
+      <Text styleClass="login-text" text="Already have an account?"/>
+      <Hyperlink fx:id="loginLink" text="Login" onAction="#switchToLogin"/>
+    </HBox>
+  </VBox>
+</VBox>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo1.DashboardController"
+            styleClass="dashboard-container"
+            prefWidth="1366" prefHeight="768">
+
+    <!-- Left Sidebar -->
+    <left>
+        <VBox styleClass="sidebar">
+            <!-- Brand Section -->
+            <HBox styleClass="brand-section" alignment="CENTER_LEFT" spacing="15" onMouseClicked="#handleBrandClick">
+                <padding>
+                    <Insets left="15" right="15"/>
+                </padding>
+                <FontIcon iconLiteral="fas-play-circle" iconSize="24" styleClass="brand-icon"/>
+                <Text text="MEDIA SERVER  |" styleClass="brand-text">
+                    <HBox.margin>
+                        <Insets right="10"/>
+                    </HBox.margin>
+                </Text>
+            </HBox>
+
+            <!-- Profile Section -->
+            <VBox styleClass="profile-section" alignment="CENTER" spacing="5">
+                <!-- Simple profile picture container for viewing only -->
+                <StackPane fx:id="profileImageContainer" styleClass="profile-image-container" 
+                          onMouseClicked="#viewProfileImage">
+                    <!-- Background circle -->
+                    <Circle fx:id="profileCircle" radius="24" fill="#252525"/>
+                    
+                    <!-- Profile image (initially invisible) -->
+                    <ImageView fx:id="profileImageView" fitWidth="48" fitHeight="48" 
+                               preserveRatio="true" visible="false"/>
+                    
+                    <!-- Default user icon (shown when no profile pic) -->
+                    <FontIcon fx:id="profileDefaultIcon" iconLiteral="fas-user-circle" iconSize="48" 
+                              styleClass="user-avatar"/>
+                </StackPane>
+                
+                <Label fx:id="usernameLabel" text="Username" styleClass="username-label"/>
+            </VBox>
+
+            <!-- Library Navigation Section -->
+            <Label text="LIBRARY" styleClass="nav-section-label"/>
+            <Button fx:id="homeButton" text="Home" styleClass="nav-button" onAction="#navigateToHome">
+                <graphic>
+                    <FontIcon iconLiteral="fas-home" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+            <Button fx:id="moviesButton" text="Movies" styleClass="nav-button" onAction="#navigateToMovies">
+                <graphic>
+                    <FontIcon iconLiteral="fas-film" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+            <Button fx:id="tvShowsButton" text="TV Shows" styleClass="nav-button" onAction="#navigateToTVShows">
+                <graphic>
+                    <FontIcon iconLiteral="fas-tv" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+            <Button fx:id="musicButton" text="Music" styleClass="nav-button" onAction="#navigateToMusic">
+                <graphic>
+                    <FontIcon iconLiteral="fas-music" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+            <Button fx:id="photosButton" text="Photos" styleClass="nav-button" onAction="#navigateToPhotos">
+                <graphic>
+                    <FontIcon iconLiteral="fas-images" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+
+            <!-- Tools Section -->
+            <Label text="TOOLS" styleClass="nav-section-label">
+                <VBox.margin>
+                    <Insets top="15" />
+                </VBox.margin>
+            </Label>
+            <Button fx:id="syncButton" text="Sync Media" styleClass="nav-button" onAction="#openSyncDialog">
+                <graphic>
+                    <FontIcon iconLiteral="fas-sync" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+            <Button fx:id="metadataButton" text="Metadata" styleClass="nav-button" onAction="#openMetadataManager">
+                <graphic>
+                    <FontIcon iconLiteral="fas-tags" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+            <Button fx:id="settingsButton" text="Settings" styleClass="nav-button" onAction="#openSettings">
+                <graphic>
+                    <FontIcon iconLiteral="fas-cog" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+
+            <VBox VBox.vgrow="ALWAYS" />
+
+            <!-- Logout Section at bottom -->
+            <Button fx:id="logoutButton" text="Logout" styleClass="nav-button" onAction="#handleLogout">
+                <graphic>
+                    <FontIcon iconLiteral="fas-sign-out-alt" styleClass="nav-icon"/>
+                </graphic>
+            </Button>
+        </VBox>
+    </left>
+
+    <!-- Main Content will be loaded dynamically -->
+    <center>
+        <VBox fx:id="mainContentArea" styleClass="content-placeholder"/>
+    </center>
+</BorderPane>

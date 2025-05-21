@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="login-container" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo1.LoginController">
+  <padding>
+    <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+  </padding>
+
+  <Text styleClass="login-title" text="Media Server Login">
+    <font>
+      <Font name="System Bold" size="24.0"/>
+    </font>
+  </Text>
+
+  <VBox spacing="10.0" maxWidth="300">
+    <TextField fx:id="usernameField" promptText="Username" styleClass="text-input"/>
+    
+    <!-- Password field -->
+    <PasswordField fx:id="passwordField" promptText="Password" styleClass="text-input"/>
+
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <CheckBox fx:id="rememberMeCheckbox" text="Remember me" styleClass="login-checkbox"/>
+    </HBox>
+
+    <Button fx:id="loginButton" text="Login" styleClass="primary-button"
+            maxWidth="Infinity" onAction="#handleLogin"/>
+
+    <HBox spacing="5.0" alignment="CENTER">
+      <Text styleClass="login-text" text="Don't have an account?"/>
+      <Hyperlink fx:id="registerLink" text="Register" onAction="#switchToRegister"/>
+    </HBox>
+  </VBox>
+</VBox>

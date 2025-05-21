@@ -1,0 +1,1022 @@
+/* Base application styles */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-accent: #0078d4;
+}
+
+/* Dark Theme */
+.dark-theme {
+    -fx-base: #2e2e2e;
+    -fx-background: #252525;
+    -fx-control-inner-background: #2e2e2e;
+    -fx-text-fill: white;
+}
+
+.dark-theme .settings-section-title {
+    -fx-text-fill: white;
+}
+
+.dark-theme .settings-label {
+    -fx-text-fill: #e0e0e0;
+}
+
+.dark-theme .sidebar {
+    -fx-background-color: #1e1e1e;
+}
+
+/* Light Theme */
+.light-theme {
+    -fx-base: #f5f5f5;
+    -fx-background: #ffffff;
+    -fx-control-inner-background: #ffffff;
+    -fx-text-fill: #101010;
+}
+
+.light-theme .settings-section-title {
+    -fx-text-fill: #303030;
+}
+
+.light-theme .settings-label {
+    -fx-text-fill: #505050;
+}
+
+/* For Light Theme */
+.light-theme .sidebar {
+    -fx-background-color: #f0f0f0;
+}
+
+.light-theme .nav-button {
+    -fx-text-fill: #333333; /* Dark text for light background */
+    -fx-background-color: #f0f0f0;
+}
+
+.light-theme .nav-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.light-theme .nav-icon {
+    -fx-icon-color: #333333; /* Dark color for light theme */
+}
+
+.dark-theme .nav-icon {
+    -fx-icon-color: #e0e0e0; /* Light color for dark theme */
+}
+
+.light-theme .nav-section-label {
+    -fx-text-fill: #555555;
+}
+
+/* Global Styles */
+.root {
+    -fx-background-color: #1a1a1a;
+    -fx-font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.toggle-password {
+    -fx-cursor: hand;
+    -fx-padding: 0 8px 0 0;
+    -fx-opacity: 0.6;
+}
+
+.toggle-password:hover {
+    -fx-opacity: 1.0;
+}
+
+/* Style for the icon */
+.toggle-password .ikonli-font-icon {
+    -fx-icon-color: #a0a0a0;
+}
+
+.toggle-password:hover .ikonli-font-icon {
+    -fx-icon-color: white;
+}
+
+/* Existing styles remain the same */
+
+.toggle-password-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 8 0 0;
+    -fx-font-size: 16px;
+    -fx-text-fill: #808080;
+    -fx-cursor: hand;
+}
+
+.toggle-password-button:hover {
+    -fx-text-fill: #0078d4;
+}
+
+.requirements-box {
+    -fx-padding: 10 0 10 0;
+}
+
+/* Update text-input to match original style */
+.text-input {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #3e3e3e;
+    -fx-padding: 8 35 8 8;
+}
+
+.text-input:focused {
+    -fx-border-color: #0078d4;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Make sidebar narrower */
+.sidebar {
+    -fx-background-color: #141414;
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+    -fx-padding: 15;
+    -fx-spacing: 8;
+}
+
+/* Brand section with correct spacing */
+.brand-section {
+    -fx-padding: 10 0;
+    -fx-spacing: 15;
+}
+
+/* Reduce brand text size */
+.brand-text {
+    -fx-font-size: 16px;
+    -fx-fill: white;
+    -fx-font-family: "System";
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 2;
+}
+
+/* Reduce profile section padding */
+.profile-section {
+    -fx-padding: 15 0 20 0;
+}
+
+/* Make nav buttons smaller */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b3b3b3;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8 12;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-min-width: 170;
+}
+
+/* Main Content Styles */
+.main-content {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Reduce top bar padding */
+.top-bar {
+    -fx-background-color: #1a1a1a;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+}
+
+/* Reduce page title size */
+.page-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Make search field smaller */
+.search-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-min-width: 200;
+}
+
+.search-container {
+    -fx-background-color: #252525;
+    -fx-background-radius: 20;
+    -fx-padding: 5 15;
+}
+
+.search-icon {
+    -fx-icon-color: #808080;
+    -fx-icon-size: 14px;
+}
+
+/* Reduce content padding */
+.content-area {
+    -fx-background-color: #1a1a1a;
+    -fx-padding: 15;
+}
+
+/* Make section spacing smaller */
+.section {
+    -fx-spacing: 12;
+    -fx-padding: 0 0 15 0;
+}
+
+/* Reduce section title size */
+.section-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Stats Cards */
+.stats-container {
+    -fx-padding: 10 0;
+}
+
+/* Make stat cards narrower */
+.stat-card {
+    -fx-background-color: #252525;
+    -fx-padding: 15;
+    -fx-background-radius: 8;
+    -fx-alignment: CENTER;
+    -fx-spacing: 8;
+    -fx-pref-width: 170;
+}
+
+.stat-icon {
+    -fx-icon-color: #0078d4;
+    -fx-icon-size: 24px;
+}
+
+.stat-title {
+    -fx-text-fill: #808080;
+    -fx-font-size: 14px;
+}
+
+.stat-value {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Media Cards */
+.media-scroll {
+    -fx-background-color: transparent;
+    -fx-min-height: 220;
+}
+
+.media-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.media-container {
+    -fx-padding: 10;
+}
+
+/* Media cards for smaller screens */
+.media-card {
+    -fx-background-color: #2a2a2a;
+    -fx-padding: 15;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.media-icon {
+    -fx-fill: #e1e1e1;
+}
+
+.media-title {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+
+/* Button Styles */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+}
+
+.icon-button:hover {
+    -fx-background-color: rgba(128, 128, 128, 0.2);
+}
+
+.edit-icon {
+    -fx-icon-size: 16px;
+    -fx-icon-color: -fx-accent;
+}
+
+.button-icon {
+    -fx-icon-size: 16px;
+    -fx-icon-color: white;
+}
+
+.view-all-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0078d4;
+    -fx-cursor: hand;
+}
+
+.view-all-button:hover {
+    -fx-text-fill: #0086ef;
+}
+
+/* Scrollbar Styles */
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #404040;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.increment-button,
+.decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* New empty media placeholder styles */
+.empty-media-placeholder {
+    -fx-background-color: #252525;
+    -fx-background-radius: 8;
+    -fx-min-width: 160;
+    -fx-max-width: 160;
+    -fx-min-height: 220;
+    -fx-cursor: hand;
+    -fx-opacity: 0.6;
+}
+
+.empty-media-placeholder:hover {
+    -fx-opacity: 1.0;
+    -fx-background-color: #303030;
+}
+
+.add-media-icon {
+    -fx-icon-color: #0078d4;
+}
+
+.add-media-text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Action buttons */
+.action-button {
+    -fx-background-color: #252525;
+    -fx-background-radius: 8;
+    -fx-padding: 12 20;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #303030;
+}
+
+.action-icon {
+    -fx-icon-color: #0078d4;
+    -fx-icon-size: 16px;
+}
+
+.action-text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Media card button - transparent container for cards */
+.media-card-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+/* Media player styles */
+.media-player-pane {
+    -fx-background-color: #0a0a0a;
+    -fx-padding: 15;
+    -fx-spacing: 15;
+}
+
+.player-header {
+    -fx-padding: 10 0;
+}
+
+.player-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: #252525;
+}
+
+.player-controls {
+    -fx-padding: 15 0;
+    -fx-background-color: #171717;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+}
+
+.player-control-button {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+    -fx-cursor: hand;
+}
+
+.player-control-button:hover {
+    -fx-background-color: #252525;
+}
+
+.player-icon {
+    -fx-icon-color: white;
+    -fx-icon-size: 18px;
+}
+
+.time-slider {
+    -fx-pref-height: 10;
+}
+
+.time-slider .track {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 5;
+}
+
+.time-slider .thumb {
+    -fx-background-color: #0078d4;
+    -fx-background-radius: 5;
+    -fx-pref-height: 10;
+    -fx-pref-width: 10;
+}
+
+.time-label {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+/* Progress bar style for media cards */
+.media-progress {
+    -fx-pref-height: 5;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-pref-width: 140;
+    -fx-translate-y: 80;
+}
+
+.media-progress > .bar {
+    -fx-background-color: #0078d4;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+
+.media-progress > .track {
+    -fx-background-color: rgba(80, 80, 80, 0.5);
+    -fx-background-radius: 0;
+}
+
+/* Add media button styling */
+.add-media-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+.media-card-bg {
+    -fx-fill: #252525;
+    -fx-stroke: transparent;
+}
+.media-grid {
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+}
+
+.progress-bar {
+    -fx-pref-height: 4px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #1db954;
+}
+
+.progress-bar .track {
+    -fx-background-color: #404040;
+}
+.movies-grid {
+    -fx-padding: 20px;
+}
+
+.movie-card {
+    -fx-background-color: #2A2A2A;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.movie-card:hover {
+    -fx-background-color: #353535;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0, 0, 0);
+}
+
+.movie-title {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+
+.empty-state {
+    -fx-padding: 50px;
+}
+
+.empty-state-icon {
+    -fx-fill: #666666;
+}
+
+.empty-state-text {
+    -fx-fill: #666666;
+    -fx-font-size: 18px;
+}
+
+.floating-action-button {
+    -fx-background-radius: 30px;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-background-color: #1E88E5;
+    -fx-text-fill: white;
+    -fx-position: absolute;
+    -fx-right: 30px;
+    -fx-bottom: 30px;
+}
+
+.floating-action-button:hover {
+    -fx-background-color: #1976D2;
+}
+/* Settings Styles */
+.settings-content {
+    -fx-padding: 20px;
+}
+
+.settings-section {
+    -fx-padding: 10px 0;
+}
+
+.settings-section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10px 0;
+}
+
+.settings-group {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+    -fx-background-color: -fx-background;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: derive(-fx-background, -10%);
+    -fx-border-width: 1px;
+}
+
+.settings-label {
+    -fx-font-weight: bold;
+}
+
+.settings-field, .settings-combo {
+    -fx-max-width: 400px;
+}
+
+.settings-list-view {
+    -fx-max-height: 150px;
+}
+
+.settings-button {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-cursor: hand;
+}
+
+.settings-button:hover {
+    -fx-background-color: derive(-fx-accent, 20%);
+}
+
+.primary-button {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 25px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: derive(-fx-accent, 20%);
+}
+/* Password field container */
+.password-field-container {
+    -fx-background-color: transparent;
+}
+
+/* Password visibility toggle button - FIXED to remove black box/background */
+.toggle-password-button {
+    -fx-background-color: transparent !important;
+    -fx-background-radius: 0;
+    -fx-padding: 0 10 0 0;
+    -fx-cursor: hand;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-translate-x: -5;
+}
+
+.visibility-icon {
+    -fx-icon-color: #909090;
+    -fx-icon-size: 16;
+    -fx-background-color: transparent;
+}
+
+.toggle-password-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+/* Password requirements */
+.requirements-box {
+    -fx-padding: 5 0 10 0;
+    -fx-opacity: 0.9;
+}
+
+.requirement-text {
+    -fx-font-size: 12px;
+    -fx-fill: #999999;
+}
+
+.requirement-met {
+    -fx-fill: #2ecc71;
+}
+
+.requirement-not-met {
+    -fx-fill: #999999;
+}
+
+/* Update text-input to have less right padding */
+.text-input {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #3e3e3e;
+    -fx-padding: 8 35 8 8;
+}
+/* Add these to your styles.css file */
+
+/* Visibility button (eye icon) - FIXED */
+.visibility-button {
+    -fx-background-color: transparent !important;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+    -fx-translate-x: -30;
+}
+
+.visibility-button:hover .visibility-icon {
+    -fx-icon-color: #0078d4;
+}
+
+/* Password requirements styling */
+.requirements-box {
+    -fx-padding: 5 0 10 0;
+}
+
+.requirement-text {
+    -fx-font-size: 12px;
+}
+
+.requirement-met {
+    -fx-fill: #27ae60;
+}
+
+.requirement-not-met {
+    -fx-fill: #808080;
+}
+/* Password field styles */
+.password-field {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #3e3e3e;
+    -fx-padding: 8 30 8 8; /* Add right padding for the eye button */
+}
+
+.light-theme .password-field {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #95a5a6;
+    -fx-border-color: #dcdcdc;
+}
+
+/* Eye button positioned on the right side of password fields - FIXED */
+.eye-button {
+    -fx-background-color: transparent !important;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+    -fx-max-width: 30;
+    -fx-max-height: 30;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-translate-x: 115; /* Position it at the right side */
+}
+
+.eye-button > .ikonli-font-icon {
+    -fx-background-color: transparent !important;
+}
+
+.eye-button .visibility-icon {
+    -fx-icon-color: #808080;
+    -fx-icon-size: 16;
+    -fx-background-color: transparent !important;
+}
+
+.eye-button:hover .visibility-icon {
+    -fx-icon-color: #0078d4;
+}
+
+/* Password requirements styling */
+.requirements-box {
+    -fx-padding: 5 0 5 0;
+}
+
+.requirement-text {
+    -fx-font-size: 12px;
+    -fx-fill: #999999;
+}
+
+/* Theme-specific styles */
+.light-theme .eye-button .visibility-icon {
+    -fx-icon-color: #95a5a6;
+}
+
+.light-theme .eye-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+.light-theme .requirement-text {
+    -fx-fill: #666666;
+}
+
+.light-theme .requirement-met {
+    -fx-fill: #27ae60;
+}
+
+.light-theme .requirement-not-met {
+    -fx-fill: #666666;
+}
+
+.dark-theme .eye-button .visibility-icon {
+    -fx-icon-color: #909090;
+}
+
+.dark-theme .eye-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+.dark-theme .requirement-text {
+    -fx-fill: #999999;
+}
+
+.dark-theme .requirement-met {
+    -fx-fill: #2ecc71;
+}
+
+.dark-theme .requirement-not-met {
+    -fx-fill: #999999;
+}
+
+/* Facebook-style profile image styling */
+.profile-image-container {
+    -fx-cursor: pointer;
+}
+
+/* Facebook-style upload overlay */
+.fb-upload-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-background-radius: 24;
+    -fx-min-width: 48;
+    -fx-min-height: 48;
+    -fx-max-width: 48;
+    -fx-max-height: 48;
+    -fx-cursor: hand;
+}
+
+.fb-camera-icon {
+    -fx-icon-color: white;
+}
+
+.fb-update-text {
+    -fx-fill: white;
+    -fx-font-size: 9px;
+}
+
+/* Default user avatar when no profile pic */
+.user-avatar {
+    -fx-icon-color: #8e8e8e;
+}
+
+/* Profile circle styling */
+#profileCircle {
+    -fx-stroke: #3e3e3e;
+    -fx-stroke-width: 1;
+}
+
+.light-theme #profileCircle {
+    -fx-stroke: #cccccc;
+}
+
+/* Image viewer dialog */
+.image-viewer-dialog {
+    -fx-background-color: rgba(0, 0, 0, 0.9);
+}
+
+.image-viewer-close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+}
+
+.image-viewer-close-button:hover {
+    -fx-text-fill: #0078d4;
+}
+/* User avatar styles with theme awareness */
+.user-avatar {
+    -fx-background-color: transparent !important;
+}
+
+/* For the font icon (user icon) inside the user-avatar */
+.user-avatar .ikonli-font-icon {
+    -fx-background-color: transparent !important;
+}
+
+/* Dark theme user avatar */
+.dark-theme .user-avatar .ikonli-font-icon {
+    -fx-icon-color: white;
+}
+
+/* Light theme user avatar - make it visible on light background */
+.light-theme .user-avatar .ikonli-font-icon {
+    -fx-icon-color: #333333; /* Dark color for light theme */
+}
+
+/* Make the Circle in the profile section transparent with theme-aware border */
+.profile-section Circle {
+    -fx-fill: transparent !important;
+}
+
+/* Theme-specific circle styles */
+.dark-theme .profile-section Circle {
+    -fx-stroke: white;
+    -fx-stroke-width: 1.5;
+}
+
+.light-theme .profile-section Circle {
+    -fx-stroke: #333333; /* Dark outline for light theme */
+    -fx-stroke-width: 1.5;
+}
+
+/* Fix for any button or container that might have a background affecting icons */
+.button, .toggle-button {
+    -fx-background-insets: 0;
+}
+
+/* FontIcon global styles to ensure transparency */
+.ikonli-font-icon {
+    -fx-background-color: transparent !important;
+}
+
+/* Apply to all password visibility buttons/containers to ensure no black box */
+.visibility-button, .eye-button, .toggle-password-button {
+    -fx-background-color: transparent !important;
+    -fx-background: transparent !important;
+    -fx-background-insets: 0;
+}
+
+.visibility-button *, .eye-button *, .toggle-password-button * {
+    -fx-background-color: transparent !important;
+}
+/* Add these styles to your existing CSS file */
+
+/* Profile image container styling */
+.profile-image-container {
+    -fx-cursor: hand;
+}
+
+/* Upload button styling */
+.upload-button {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 3, 0, 0, 0);
+}
+
+.upload-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 5, 0, 0, 0);
+}
+
+.upload-icon {
+    -fx-icon-color: white;
+}
+/* Settings page styling */
+.settings-profile-pic-container {
+    -fx-cursor: hand;
+}
+
+.settings-upload-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-background-radius: 50;
+    -fx-min-width: 100;
+    -fx-min-height: 100;
+    -fx-max-width: 100;
+    -fx-max-height: 100;
+    -fx-cursor: hand;
+}
+
+.upload-icon {
+    -fx-icon-color: white;
+}
+
+.upload-text {
+    -fx-fill: white;
+    -fx-font-size: 12px;
+}
+
+.user-avatar {
+    -fx-icon-color: #8e8e8e;
+}
+
+.settings-tab-content {
+    -fx-background-color: transparent;
+}
+
+.settings-tab-pane {
+    -fx-tab-min-width: 120px;
+}
+
+.section-heading {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.section-description {
+    -fx-fill: #888888;
+}
+
+.small-button {
+    -fx-font-size: 11px;
+    -fx-padding: 2px 8px;
+}
+
+.primary-button {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+}
+
+.primary-button:hover {
+    -fx-background-color: #0063b1;
+}
+
+.button-icon {
+    -fx-icon-color: -fx-text-fill;
+}
+
+.image-viewer-name {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.edit-profile-button {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+}
+
+.clickable {
+    -fx-cursor: hand;
+}

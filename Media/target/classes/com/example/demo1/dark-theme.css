@@ -1,0 +1,296 @@
+/* Dark Theme Styles */
+
+.dark-theme {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #f0f0f0;
+}
+
+/* Login/Register specific styles */
+.dark-theme.login-container {
+    -fx-background-color: #1e1e1e;
+}
+
+.dark-theme .login-title {
+    -fx-fill: #ffffff;
+}
+
+.dark-theme .login-text {
+    -fx-fill: #a0a0a0;
+}
+
+.dark-theme .login-checkbox {
+    -fx-text-fill: #ffffff;
+}
+
+/* Main application styles */
+.dark-theme .sidebar {
+    -fx-background-color: #252525;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.dark-theme .brand-icon,
+.dark-theme .brand-text {
+    -fx-fill: #3498db;
+}
+
+.dark-theme .nav-section-label {
+    -fx-text-fill: #909090;
+}
+
+.dark-theme .nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f0f0f0;
+}
+
+.dark-theme .nav-button:hover {
+    -fx-background-color: #303030;
+}
+
+.dark-theme .active-nav-button {
+    -fx-background-color: #2d3748;
+    -fx-text-fill: #3498db;
+}
+
+.dark-theme .nav-icon {
+    -fx-icon-color: #f0f0f0;
+}
+
+.dark-theme .active-nav-button .nav-icon {
+    -fx-icon-color: #3498db;
+}
+
+.dark-theme .username-label {
+    -fx-text-fill: #f0f0f0;
+}
+
+.dark-theme .user-role-label {
+    -fx-text-fill: #909090;
+}
+
+.dark-theme .top-bar {
+    -fx-background-color: #252525;
+    -fx-border-color: #2a2a2a;
+    -fx-border-width: 0 0 1 0;
+}
+
+.dark-theme .page-title {
+    -fx-text-fill: #f0f0f0;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.dark-theme .search-container {
+    -fx-background-color: #303030;
+    -fx-background-radius: 30;
+}
+
+.dark-theme .search-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f0f0f0;
+    -fx-prompt-text-fill: #909090;
+}
+
+.dark-theme .search-icon {
+    -fx-icon-color: #909090;
+}
+
+.dark-theme .icon-button {
+    -fx-background-color: transparent;
+}
+
+.dark-theme .icon-button:hover {
+    -fx-background-color: #303030;
+}
+
+.dark-theme .action-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.dark-theme .action-icon {
+    -fx-icon-color: white;
+}
+
+.dark-theme .section-title {
+    -fx-text-fill: #f0f0f0;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dark-theme .content-area {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+.dark-theme .stat-card {
+    -fx-background-color: #252525;
+    -fx-background-radius: 10;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 0);
+}
+
+.dark-theme .stat-icon {
+    -fx-icon-color: #3498db;
+    -fx-icon-size: 32;
+}
+
+.dark-theme .stat-title {
+    -fx-text-fill: #909090;
+    -fx-font-size: 12px;
+}
+
+.dark-theme .stat-value {
+    -fx-text-fill: #f0f0f0;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.dark-theme .media-container {
+    -fx-padding: 10;
+}
+
+.dark-theme .separator {
+    -fx-background-color: #2a2a2a;
+}
+
+.dark-theme .empty-state-icon {
+    -fx-icon-color: #909090;
+}
+
+.dark-theme .empty-state-text {
+    -fx-fill: #f0f0f0;
+    -fx-font-size: 16px;
+}
+
+.dark-theme .floating-action-button {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+/* Ensure buttons and text fields look good in dark theme */
+.dark-theme .text-input {
+    -fx-background-color: #303030;
+    -fx-text-fill: #f0f0f0;
+    -fx-prompt-text-fill: #909090;
+}
+
+.dark-theme .primary-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+/* Add these to the existing dark-theme.css file */
+
+.dark-theme .visibility-toggle {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0 5 0 5;
+}
+
+.dark-theme .visibility-icon {
+    -fx-icon-color: #909090;
+}
+
+.dark-theme .visibility-toggle:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+/* Add to dark-theme.css */
+.dark-theme .text-input-with-icon {
+    -fx-padding: 5 30 5 5;
+    -fx-background-color: #303030;
+    -fx-text-fill: #f0f0f0;
+    -fx-prompt-text-fill: #909090;
+}
+
+.dark-theme .visibility-toggle-internal {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+}
+
+.dark-theme .visibility-icon {
+    -fx-icon-color: #909090;
+    -fx-icon-size: 16;
+}
+
+.dark-theme .visibility-toggle-internal:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+/* Password requirement styles */
+/* Password field styles */
+.dark-theme .password-field-container .text-input {
+    -fx-background-color: #303030;
+    -fx-text-fill: #f0f0f0;
+    -fx-prompt-text-fill: #909090;
+}
+
+.dark-theme .toggle-password-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 10 0 0;
+}
+
+.dark-theme .toggle-password-button .visibility-icon {
+    -fx-icon-color: #909090;
+}
+
+.dark-theme .toggle-password-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+/* Password requirements */
+.dark-theme .requirements-box {
+    -fx-padding: 5 0 10 0;
+}
+
+/* Dark theme password field customization */
+.dark-theme .visibility-button {
+    -fx-background-color: transparent;
+}
+
+.dark-theme .visibility-icon {
+    -fx-icon-color: #909090;
+}
+
+.dark-theme .visibility-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+.dark-theme .requirement-text {
+    -fx-font-size: 12px;
+    -fx-fill: #909090;
+}
+
+.dark-theme .requirement-met {
+    -fx-fill: #2ecc71;
+}
+
+.dark-theme .requirement-not-met {
+    -fx-fill: #909090;
+}
+.root {
+    -fx-base: #2a2a2a;
+    -fx-background: #333333;
+    -fx-control-inner-background: #333333;
+    -fx-accent: #0078d4;
+    -fx-focus-color: #0078d4;
+    -fx-faint-focus-color: #0078d422;
+    -fx-text-fill: white;
+}
+
+.text {
+    -fx-fill: white;
+}
+
+.label {
+    -fx-text-fill: white;
+}

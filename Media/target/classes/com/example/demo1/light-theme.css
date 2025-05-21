@@ -1,0 +1,309 @@
+.root {
+    -fx-base: #ececec;
+    -fx-background: #f4f4f4;
+    -fx-control-inner-background: white;
+    -fx-accent: #0078d4;
+    -fx-focus-color: #0078d4;
+    -fx-faint-focus-color: #0078d422;
+    -fx-text-fill: #333333;
+}
+
+.text {
+    -fx-fill: #333333;
+}
+
+.label {
+    -fx-text-fill: #333333;
+}/* Light Theme Styles */
+
+.light-theme {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333333;
+}
+
+/* Login/Register specific styles */
+.light-theme.login-container {
+    -fx-background-color: #ffffff;
+}
+
+.light-theme .login-title {
+    -fx-fill: #333333;
+}
+
+.light-theme .login-text {
+    -fx-fill: #555555;
+}
+
+.light-theme .login-checkbox {
+    -fx-text-fill: #333333;
+}
+
+/* Main application styles */
+.light-theme .sidebar {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.light-theme .brand-icon,
+.light-theme .brand-text {
+    -fx-fill: #3498db;
+}
+
+.light-theme .nav-section-label {
+    -fx-text-fill: #95a5a6;
+}
+
+.light-theme .nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+}
+
+.light-theme .nav-button:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.light-theme .active-nav-button {
+    -fx-background-color: #e8f5fe;
+    -fx-text-fill: #3498db;
+}
+
+.light-theme .nav-icon {
+    -fx-icon-color: #333333;
+}
+
+.light-theme .active-nav-button .nav-icon {
+    -fx-icon-color: #3498db;
+}
+
+.light-theme .username-label {
+    -fx-text-fill: #333333;
+}
+
+.light-theme .user-role-label {
+    -fx-text-fill: #95a5a6;
+}
+
+.light-theme .top-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #eeeeee;
+    -fx-border-width: 0 0 1 0;
+}
+
+.light-theme .page-title {
+    -fx-text-fill: #333333;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.light-theme .search-container {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 30;
+}
+
+.light-theme .search-field {
+    -fx-background-color: transparent;
+}
+
+.light-theme .search-icon {
+    -fx-icon-color: #95a5a6;
+}
+
+.light-theme .icon-button {
+    -fx-background-color: transparent;
+}
+
+.light-theme .icon-button:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.light-theme .action-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.light-theme .action-icon {
+    -fx-icon-color: white;
+}
+
+.light-theme .section-title {
+    -fx-text-fill: #333333;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.light-theme .content-area {
+    -fx-background-color: #f8f8f8;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+.light-theme .stat-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);
+}
+
+.light-theme .stat-icon {
+    -fx-icon-color: #3498db;
+    -fx-icon-size: 32;
+}
+
+.light-theme .stat-title {
+    -fx-text-fill: #95a5a6;
+    -fx-font-size: 12px;
+}
+
+.light-theme .stat-value {
+    -fx-text-fill: #333333;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.light-theme .media-container {
+    -fx-padding: 10;
+}
+
+.light-theme .separator {
+    -fx-background-color: #eeeeee;
+}
+
+.light-theme .empty-state-icon {
+    -fx-icon-color: #95a5a6;
+}
+
+.light-theme .empty-state-text {
+    -fx-fill: #333333;
+    -fx-font-size: 16px;
+}
+
+.light-theme .floating-action-button {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+/* Ensure buttons and text fields look good in light theme */
+.light-theme .text-input {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #95a5a6;
+}
+
+.light-theme .primary-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+/* Add these to the existing light-theme.css file */
+
+.light-theme .visibility-toggle {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0 5 0 5;
+}
+
+.light-theme .visibility-icon {
+    -fx-icon-color: #95a5a6;
+}
+
+.light-theme .visibility-toggle:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+/* Add to light-theme.css */
+/* Password visibility toggle for light theme */
+.light-theme .text-input-with-icon {
+    -fx-padding: 5 30 5 5;
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #95a5a6;
+}
+
+.light-theme .visibility-toggle-internal {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+}
+
+.light-theme .visibility-icon {
+    -fx-icon-color: #95a5a6;
+    -fx-icon-size: 16;
+}
+
+.light-theme .visibility-toggle-internal:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+/* Password requirement styles */
+.light-theme .requirements-box {
+    -fx-padding: 5 0 10 0;
+}
+
+.light-theme .requirement-text {
+    -fx-font-size: 12px;
+    -fx-fill: #666666;
+}
+
+.light-theme .requirement-met {
+    -fx-fill: #27ae60;
+}
+
+.light-theme .requirement-not-met {
+    -fx-fill: #666666;
+}
+/* Password field styles */
+.light-theme .password-field-container .text-input {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #95a5a6;
+}
+
+.light-theme .toggle-password-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 10 0 0;
+}
+
+.light-theme .toggle-password-button .visibility-icon {
+    -fx-icon-color: #95a5a6;
+}
+
+.light-theme .toggle-password-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+/* Password requirements */
+.light-theme .requirements-box {
+    -fx-padding: 5 0 10 0;
+}
+
+/* Light theme password field customization */
+.light-theme .visibility-button {
+    -fx-background-color: transparent;
+}
+
+.light-theme .visibility-icon {
+    -fx-icon-color: #95a5a6;
+}
+
+.light-theme .visibility-button:hover .visibility-icon {
+    -fx-icon-color: #3498db;
+}
+
+.light-theme .requirement-text {
+    -fx-fill: #666666;
+}
+
+.light-theme .requirement-met {
+    -fx-fill: #27ae60;
+}
+
+.light-theme .requirement-not-met {
+    -fx-fill: #666666;
+}
